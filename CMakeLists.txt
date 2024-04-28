@@ -18,4 +18,5 @@ add_executable(WorkerManager main.cpp
         data_processing.h
         vo/get/user_select.cpp
         vo/back/user_info.cpp
+        processing_util.cpp
 )

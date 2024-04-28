@@ -23,31 +23,60 @@ int main() {
         cout << "3. 员工信息修改" << endl;
         cout << "4. 员工信息删除" << endl;
         cout << "5. 员工信息统计" << endl;
-        cout << "5. 退出系统" << endl;
+        cout << "6. 退出系统" << endl;
         // 输入数据
-        string input_string;
+        std::string input_string;
         cin >> input_string;
         if (regex_match(input_string, regex("^[0-9]+$"))) {
             switch (stoi(input_string)) {
                 case 1: {
+                    // 查询员工信息
                     get_vo::user_select get_user_select_vo = processing::select_user();
                     service::user user_service;
                     user_service.get_user(get_user_select_vo);
                     break;
+                    cout << "[系统] 员工系统查询完成" << endl;
                 }
-                case 2:
-                    selectEmployee();
+                case 2: {
+                    // 添加员工信息
+                    if (processing::add_user()) {
+                        cout << "[系统] 员工信息添加成功！" << endl;
+                    } else {
+                        cout << "[系统] 员工信息添加失败！" << endl;
+                    }
                     break;
-                case 3:
-                    updateEmployee();
+                }
+                case 3: {
+                    // 修改员工信息
+                    if (processing::edit_user()) {
+                        cout << "[系统] 员工信息修改成功！" << endl;
+                    } else {
+                        cout << "[系统] 员工信息修改失败！" << endl;
+                    }
                     break;
-                case 4:
-                    deleteEmployee();
+                }
+                case 4: {
+                    // 删除员工信息
+                    if (processing::delete_user()) {
+                        cout << "[系统] 员工信息删除成功！" << endl;
+                    } else {
+                        cout << "[系统] 员工信息删除失败！" << endl;
+                    }
                     break;
-                case 5:
+                }
+                case 5: {
+                    // 统计员工信息
+                    processing::statistics_user();
+                    break;
+                }
+                case 6: {
+                    // 退出系统
+                    cout << "[系统] 感谢您的使用，再见！" << endl;
                     exit(0);
                     break;
+                }
                 default:
+                    // 错误输入
                     break;
             }
         } else {
