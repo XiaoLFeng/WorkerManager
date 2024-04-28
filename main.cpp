@@ -31,9 +31,15 @@ int main() {
             switch (stoi(input_string)) {
                 case 1: {
                     // 查询员工信息
-                    get_vo::user_select get_user_select_vo = processing::select_user();
-                    service::user user_service;
-                    user_service.get_user(get_user_select_vo);
+                    back_vo::user_info get_user_select_vo = processing::select_user();
+                    // 展示用户的信息
+                    cout << "员工信息如下：" << endl;
+                    cout << "员工编号：" << get_user_select_vo.user_number << endl;
+                    cout << "员工姓名：" << get_user_select_vo.user_name << endl;
+                    cout << "员工性别：" << get_user_select_vo.user_sex << endl;
+                    cout << "员工部门：" << get_user_select_vo.user_department << endl;
+                    cout << "员工工资：" << get_user_select_vo.user_wages << endl;
+                    cout << "员工级别：" << get_user_select_vo.user_level << endl;
                     break;
                     cout << "[系统] 员工系统查询完成" << endl;
                 }
@@ -66,7 +72,7 @@ int main() {
                 }
                 case 5: {
                     // 统计员工信息
-                    processing::statistics_user();
+                    // processing::statistics_user();
                     break;
                 }
                 case 6: {

@@ -26,6 +26,8 @@ namespace get_vo {
     public:
         // 用户工号
         std::string user_number;
+        // 用户姓名
+        std::string user_name;
         // 用户部门
         std::string user_department;
         // 用户工资

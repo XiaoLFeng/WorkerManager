@@ -52,51 +52,58 @@ build cmake_object_order_depends_target_WorkerManager: phony || CMakeFiles/Worke
 build CMakeFiles/WorkerManager.dir/main.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/main.cpp || cmake_object_order_depends_target_WorkerManager
   DEP_FILE = CMakeFiles/WorkerManager.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/usr/local/mysql-connector-c++-8.3.0/include
+  INCLUDES = -I/opt/homebrew/Cellar/mysql-connector-c++/8.3.0/include -I/opt/homebrew/opt/openssl@3/include
   OBJECT_DIR = CMakeFiles/WorkerManager.dir
   OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir
 
 build CMakeFiles/WorkerManager.dir/services/user.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/services/user.cpp || cmake_object_order_depends_target_WorkerManager
   DEP_FILE = CMakeFiles/WorkerManager.dir/services/user.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/usr/local/mysql-connector-c++-8.3.0/include
+  INCLUDES = -I/opt/homebrew/Cellar/mysql-connector-c++/8.3.0/include -I/opt/homebrew/opt/openssl@3/include
   OBJECT_DIR = CMakeFiles/WorkerManager.dir
   OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir/services
 
 build CMakeFiles/WorkerManager.dir/config/sql_connect.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/config/sql_connect.cpp || cmake_object_order_depends_target_WorkerManager
   DEP_FILE = CMakeFiles/WorkerManager.dir/config/sql_connect.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/usr/local/mysql-connector-c++-8.3.0/include
+  INCLUDES = -I/opt/homebrew/Cellar/mysql-connector-c++/8.3.0/include -I/opt/homebrew/opt/openssl@3/include
   OBJECT_DIR = CMakeFiles/WorkerManager.dir
   OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir/config
 
-build CMakeFiles/WorkerManager.dir/vo/get/user_create.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/vo/get/user_create.cpp || cmake_object_order_depends_target_WorkerManager
-  DEP_FILE = CMakeFiles/WorkerManager.dir/vo/get/user_create.cpp.o.d
+build CMakeFiles/WorkerManager.dir/model/vo/get/user_create.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/model/vo/get/user_create.cpp || cmake_object_order_depends_target_WorkerManager
+  DEP_FILE = CMakeFiles/WorkerManager.dir/model/vo/get/user_create.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/usr/local/mysql-connector-c++-8.3.0/include
+  INCLUDES = -I/opt/homebrew/Cellar/mysql-connector-c++/8.3.0/include -I/opt/homebrew/opt/openssl@3/include
   OBJECT_DIR = CMakeFiles/WorkerManager.dir
-  OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir/vo/get
+  OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir/model/vo/get
 
-build CMakeFiles/WorkerManager.dir/vo/get/user_select.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/vo/get/user_select.cpp || cmake_object_order_depends_target_WorkerManager
-  DEP_FILE = CMakeFiles/WorkerManager.dir/vo/get/user_select.cpp.o.d
+build CMakeFiles/WorkerManager.dir/model/vo/get/user_select.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/model/vo/get/user_select.cpp || cmake_object_order_depends_target_WorkerManager
+  DEP_FILE = CMakeFiles/WorkerManager.dir/model/vo/get/user_select.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/usr/local/mysql-connector-c++-8.3.0/include
+  INCLUDES = -I/opt/homebrew/Cellar/mysql-connector-c++/8.3.0/include -I/opt/homebrew/opt/openssl@3/include
   OBJECT_DIR = CMakeFiles/WorkerManager.dir
-  OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir/vo/get
+  OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir/model/vo/get
 
-build CMakeFiles/WorkerManager.dir/vo/back/user_info.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/vo/back/user_info.cpp || cmake_object_order_depends_target_WorkerManager
-  DEP_FILE = CMakeFiles/WorkerManager.dir/vo/back/user_info.cpp.o.d
+build CMakeFiles/WorkerManager.dir/model/vo/back/user_info.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/model/vo/back/user_info.cpp || cmake_object_order_depends_target_WorkerManager
+  DEP_FILE = CMakeFiles/WorkerManager.dir/model/vo/back/user_info.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/usr/local/mysql-connector-c++-8.3.0/include
+  INCLUDES = -I/opt/homebrew/Cellar/mysql-connector-c++/8.3.0/include -I/opt/homebrew/opt/openssl@3/include
   OBJECT_DIR = CMakeFiles/WorkerManager.dir
-  OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir/vo/back
+  OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir/model/vo/back
 
 build CMakeFiles/WorkerManager.dir/processing_util.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/processing_util.cpp || cmake_object_order_depends_target_WorkerManager
   DEP_FILE = CMakeFiles/WorkerManager.dir/processing_util.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
-  INCLUDES = -I/usr/local/mysql-connector-c++-8.3.0/include
+  INCLUDES = -I/opt/homebrew/Cellar/mysql-connector-c++/8.3.0/include -I/opt/homebrew/opt/openssl@3/include
   OBJECT_DIR = CMakeFiles/WorkerManager.dir
   OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir
+
+build CMakeFiles/WorkerManager.dir/model/entity/user_do.cpp.o: CXX_COMPILER__WorkerManager_unscanned_Debug /Users/xiaofeng/Documents/ProgramProjects/Personal/C$:C++/WorkerManager/model/entity/user_do.cpp || cmake_object_order_depends_target_WorkerManager
+  DEP_FILE = CMakeFiles/WorkerManager.dir/model/entity/user_do.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/opt/homebrew/Cellar/mysql-connector-c++/8.3.0/include -I/opt/homebrew/opt/openssl@3/include
+  OBJECT_DIR = CMakeFiles/WorkerManager.dir
+  OBJECT_FILE_DIR = CMakeFiles/WorkerManager.dir/model/entity
 
 
 # =============================================================================
@@ -106,9 +113,10 @@ build CMakeFiles/WorkerManager.dir/processing_util.cpp.o: CXX_COMPILER__WorkerMa
 #############################################
 # Link the executable WorkerManager
 
-build WorkerManager: CXX_EXECUTABLE_LINKER__WorkerManager_Debug CMakeFiles/WorkerManager.dir/main.cpp.o CMakeFiles/WorkerManager.dir/services/user.cpp.o CMakeFiles/WorkerManager.dir/config/sql_connect.cpp.o CMakeFiles/WorkerManager.dir/vo/get/user_create.cpp.o CMakeFiles/WorkerManager.dir/vo/get/user_select.cpp.o CMakeFiles/WorkerManager.dir/vo/back/user_info.cpp.o CMakeFiles/WorkerManager.dir/processing_util.cpp.o
+build WorkerManager: CXX_EXECUTABLE_LINKER__WorkerManager_Debug CMakeFiles/WorkerManager.dir/main.cpp.o CMakeFiles/WorkerManager.dir/services/user.cpp.o CMakeFiles/WorkerManager.dir/config/sql_connect.cpp.o CMakeFiles/WorkerManager.dir/model/vo/get/user_create.cpp.o CMakeFiles/WorkerManager.dir/model/vo/get/user_select.cpp.o CMakeFiles/WorkerManager.dir/model/vo/back/user_info.cpp.o CMakeFiles/WorkerManager.dir/processing_util.cpp.o CMakeFiles/WorkerManager.dir/model/entity/user_do.cpp.o | /usr/local/mysql-connector-c++/lib64/libmysqlcppconn.dylib /opt/homebrew/lib/libssl.dylib /opt/homebrew/lib/libcrypto.dylib
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
-  LINK_PATH = -L/usr/local/mysql-connector-c++-8.3.0/lib64
+  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/Cellar/mysql-connector-c++/8.3.0/lib -Wl,-rpath,/opt/homebrew/opt/openssl@3/lib -Wl,-rpath,/usr/local/mysql-connector-c++/lib64  /usr/local/mysql-connector-c++/lib64/libmysqlcppconn.dylib  /opt/homebrew/lib/libssl.dylib  /opt/homebrew/lib/libcrypto.dylib
+  LINK_PATH = -L/opt/homebrew/Cellar/mysql-connector-c++/8.3.0/lib   -L/opt/homebrew/opt/openssl@3/lib
   OBJECT_DIR = CMakeFiles/WorkerManager.dir
   POST_BUILD = :
   PRE_LINK = :
