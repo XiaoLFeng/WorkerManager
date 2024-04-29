@@ -6,8 +6,6 @@
 namespace get_vo {
     class user_create {
     public:
-        // 用户工号
-        std::string user_number;
         // 用户姓名
         std::string user_name;
         // 用户性别
@@ -24,10 +22,12 @@ namespace get_vo {
 
     class user_edit {
     public:
-        // 用户工号
+        // 用户号
         std::string user_number;
         // 用户姓名
         std::string user_name;
+        // 用户性别
+        std::string user_sex;
         // 用户部门
         std::string user_department;
         // 用户工资

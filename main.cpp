@@ -23,8 +23,7 @@ int main() {
         cout << "2. 员工信息录入" << endl;
         cout << "3. 员工信息修改" << endl;
         cout << "4. 员工信息删除" << endl;
-        cout << "5. 员工信息统计" << endl;
-        cout << "6. 退出系统" << endl;
+        cout << "5. 退出系统" << endl;
         cout << "========================" << endl;
         // 输入数据
         std::string input_string;
@@ -66,11 +65,6 @@ int main() {
                     break;
                 }
                 case 5: {
-                    // 统计员工信息
-                    // processing::statistics_user();
-                    break;
-                }
-                case 6: {
                     // 退出系统
                     cout << "[系统] 感谢您的使用，再见！" << endl;
                     exit(0);
