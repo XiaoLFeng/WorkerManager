@@ -14,7 +14,7 @@ namespace processing {
     // 该方法用于查询员工信息
     // 返回值为员工信息
     // 该方法会调用 get_user 方法
-    back_vo::user_info select_user() {
+    void select_user() {
         cout << "========== select_user ==========" << endl;
         cout << "您正在进行员工信息的查询;" << endl;
         cout << "用户的查询可以按姓名、电话号码、工号查询;" << endl;
@@ -22,8 +22,7 @@ namespace processing {
         cout << "请输入需要查询的信息：";
         get_vo::user_select user_select_vo;
         cin >> user_select_vo.user;
-        service::user user_service;
-        return user_service.get_user(user_select_vo);
+        service::user::get_user(user_select_vo);
     }
 
     // 添加员工信息
@@ -48,7 +47,7 @@ namespace processing {
         cin >> user_create_vo.user_position;
         cout << "========== add_user ==========" << endl;
         service::user user_service;
-        return user_service.add_user(user_create_vo);
+        return user_service.add_user(&user_create_vo);
     }
 
     // 修改员工信息
@@ -57,7 +56,7 @@ namespace processing {
     // 该方法会调用 select_user 方法
     bool edit_user() {
         // 请输入您需要修改的员工信息
-        back_vo::user_info userInfo = select_user();
+        auto *userInfo = new back_vo::user_info;
         int check_edit = 0;
         // 是否确认修改
         cout << "是否确认修改员工信息？(1 是，2 不是）：";
@@ -69,7 +68,7 @@ namespace processing {
         // 开始修改员工信息
         get_vo::user_edit user_edit_vo;
         cout << "========== edit_user ==========" << endl;
-        cout << "您正在进行员工 [" << userInfo.user_number << "]" << userInfo.user_name << " 信息的修改;" << endl;
+        cout << "您正在进行员工 [" << userInfo->user_number << "]" << userInfo->user_name << " 信息的修改;" << endl;
         cout << "请输入员工的工号：";
         cin >> user_edit_vo.user_number;
         cout << "请输入员工的姓名：";

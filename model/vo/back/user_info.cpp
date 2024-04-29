@@ -12,5 +12,6 @@ namespace back_vo {
         std::string user_department;
         std::string user_wages;
         std::string user_level;
+        std::string user_posts;
     };
 }

@@ -34,17 +34,9 @@ int main() {
             switch (stoi(input_string)) {
                 case 1: {
                     // 查询员工信息
-                    back_vo::user_info get_user_select_vo = processing::select_user();
-                    // 展示用户的信息
-                    cout << "员工信息如下：" << endl;
-                    cout << "员工编号：" << get_user_select_vo.user_number << endl;
-                    cout << "员工姓名：" << get_user_select_vo.user_name << endl;
-                    cout << "员工性别：" << get_user_select_vo.user_sex << endl;
-                    cout << "员工部门：" << get_user_select_vo.user_department << endl;
-                    cout << "员工工资：" << get_user_select_vo.user_wages << endl;
-                    cout << "员工级别：" << get_user_select_vo.user_level << endl;
-                    break;
+                    processing::select_user();
                     cout << "[系统] 员工系统查询完成" << endl;
+                    break;
                 }
                 case 2: {
                     // 添加员工信息
@@ -88,6 +80,7 @@ int main() {
                     // 错误输入
                     break;
             }
+            cout << endl;
         } else {
             cout << "输入错误，请重新输入！" << endl;
         }

@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <chrono>
+#include <cstdlib>
 
 namespace util {
     /**
@@ -14,10 +15,10 @@ namespace util {
      * @return
      */
     static std::string generate_number(const int size) {
+        srand((unsigned)time(nullptr));
         std::string number = "XF";
-        for (int i = 0; i < size; i++) {
-            number += std::to_string(rand_r(reinterpret_cast<unsigned int *>(10)));
-        }
+        for (int i = 0; i < size-2; i++)
+            number =  number + std::to_string(rand()%10);
         return number;
     }
 

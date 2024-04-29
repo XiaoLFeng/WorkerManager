@@ -17,10 +17,10 @@ using namespace entity;
 namespace service {
     class user {
     public:
-        bool add_user(const get_vo::user_create &user_info);
+        bool add_user(get_vo::user_create *user_info);
         bool edit_user(const get_vo::user_edit &user_info);
         bool delete_user(const std::string number);
-        back_vo::user_info get_user(const get_vo::user_select &user_info);
+        static void get_user(const get_vo::user_select &user_info);
         back_vo::user_info *get_user_by_username(std::string username);
     };
 }
