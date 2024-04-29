@@ -3,16 +3,17 @@
 //
 
 #include <iostream>
-#include "../config/sql_connect.cpp"
+#include <mysqlx/xdevapi.h>
 #include "../model/vo/back/user_info.cpp"
 #include "../model/vo/get/user_create.cpp"
 #include "../model/vo/get/user_select.cpp"
 #include "../model/entity/user_do.cpp"
 #include "../processing_util.cpp"
 
-using namespace sql;
 using namespace util;
+using namespace std;
 using namespace entity;
+
 namespace service {
     class user {
     public:

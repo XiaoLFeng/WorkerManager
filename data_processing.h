@@ -44,6 +44,8 @@ namespace processing {
         cin >> user_create_vo.user_wages;
         cout << "请输入员工的级别：";
         cin >> user_create_vo.user_level;
+        cout << "请输入员工职位：";
+        cin >> user_create_vo.user_position;
         cout << "========== add_user ==========" << endl;
         service::user user_service;
         return user_service.add_user(user_create_vo);

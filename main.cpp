@@ -1,5 +1,6 @@
 #include <iostream>
 #include <regex>
+#include <mysqlx/xdevapi.h>
 #include "services/service.h"
 #include "data_processing.h"
 
@@ -24,8 +25,10 @@ int main() {
         cout << "4. 员工信息删除" << endl;
         cout << "5. 员工信息统计" << endl;
         cout << "6. 退出系统" << endl;
+        cout << "========================" << endl;
         // 输入数据
         std::string input_string;
+        cout << "请输入选项: ";
         cin >> input_string;
         if (regex_match(input_string, regex("^[0-9]+$"))) {
             switch (stoi(input_string)) {
